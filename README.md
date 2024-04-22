@@ -6,14 +6,14 @@ The &quot;Employee Assessment REST Service&quot; is a Spring Boot project develo
 
 <p><strong>Key Features:</strong><br />
 <strong>Authentication and Authorization:</strong><br />
-&nbsp;&nbsp; &nbsp;Users can authenticate using role-based access control (RBAC) via the /authentication endpoint.<br />
-&nbsp;&nbsp; &nbsp;Admin and user roles are defined, with distinct privileges for each role.<br />
-&nbsp;&nbsp; &nbsp;Authentication tokens (JWT) are provided upon successful authentication for subsequent request validation.</p>
+Users can authenticate using role-based access control (RBAC) via the /authentication endpoint.<br />
+Admin and user roles are defined, with distinct privileges for each role.<br />
+Authentication tokens (JWT) are provided upon successful authentication for subsequent request validation.</p>
 
 <p><strong>Employee Management:</strong><br />
-&nbsp;&nbsp; &nbsp;Admin users can add new employee records using the /admin/add-employee endpoint, providing details such as name, email, and department.<br />
-&nbsp;&nbsp; &nbsp;Admins also have the ability to delete employee records using the /admin/delete-employee/{employeeId} endpoint, where {employeeId} represents the unique identifier of the&nbsp; &nbsp; &nbsp; employee to be deleted.<br />
-&nbsp;&nbsp; &nbsp;Regular users can retrieve employee information using the /employees endpoint to get a list of all employees or the /employees/{employeeId} endpoint to retrieve details of a&nbsp; &nbsp; &nbsp; specific employee by ID.</p>
+Admin users can add new employee records using the /admin/add-employee endpoint, providing details such as name, email, and department.<br />
+Admins also have the ability to delete employee records using the /admin/delete-employee/{employeeId} endpoint, where {employeeId} represents the unique identifier of the employee to be deleted.<br />
+Regular users can retrieve employee information using the /employees endpoint to get a list of all employees or the /employees/{employeeId} endpoint to retrieve details of a specific employee by ID.</p>
 
 <p><strong>RESTful API:</strong><br />
 The project follows RESTful principles, providing well-defined endpoints for seamless interaction.<br />
@@ -34,4 +34,4 @@ Rate limiting prevents excessive API requests, while circuit breaking helps main
 </ul>
 
 <p><strong>Conclusion:</strong><br />
-&nbsp;&nbsp; &nbsp;The &quot;Employee Assessment REST Service&quot; project offers a robust solution for managing employee information securely and efficiently through a RESTful API. With features such as role-based authentication, JWT validation, and resilience mechanisms, the project ensures data integrity, confidentiality, and system stability.</p>
+The &quot;Employee Assessment REST Service&quot; project offers a robust solution for managing employee information securely and efficiently through a RESTful API. With features such as role-based authentication, JWT validation, and resilience mechanisms, the project ensures data integrity, confidentiality, and system stability.</p>
