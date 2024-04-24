@@ -69,8 +69,6 @@ public class EmployeeController {
 	}
 	
 	public ResponseEntity<EmployeeDTO> employeeAccessFallback(long id, Exception exception){
-		System.out.println(exception.getMessage());
-		System.out.println(exception.getCause());
 		EmployeeDTO employeeDTO = new EmployeeDTO(00000, "fallback name", "fallback email", "fallback department");
 		return ResponseEntity.ok(employeeDTO);
 	}
