@@ -79,7 +79,7 @@ The &quot;Employee Assessment REST Service&quot; project offers a robust solutio
 <h3><strong>Delete Employee:</strong></h3>
 
 <ul>
-	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/delete-employee/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/admin/delete-employee/133</a></li>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/delete-employee/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/admin/delete-employee/{employeeID}</a></li>
 	<li><strong>Method:</strong> DELETE</li>
 	<li><strong>Headers:</strong><br />
 	<strong>Key:</strong> Authorization<br />
@@ -89,7 +89,7 @@ The &quot;Employee Assessment REST Service&quot; project offers a robust solutio
 <h3><strong>Get Employee By ID:</strong></h3>
 
 <ul>
-	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/employees/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/employee/133</a></li>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/employees/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/employee/{employeeID}</a></li>
 	<li><strong>Method:</strong> GET</li>
 	<li><strong>Headers:</strong><br />
 	<strong>Key:</strong> Authorization<br />
@@ -110,7 +110,7 @@ The &quot;Employee Assessment REST Service&quot; project offers a robust solutio
 <h3><strong>Update Employee:</strong></h3>
 
 <ul>
-	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/update-employee/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/admin/update-employee/133</a></li>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/update-employee/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/admin/update-employee/{employeeID}</a></li>
 	<li><strong>Method:</strong> PUT</li>
 	<li><strong>Request Body:</strong><br />
 	json<br />
