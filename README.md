@@ -79,7 +79,7 @@ The &quot;Employee Assessment REST Service&quot; project offers a robust solutio
 <h3><strong>Delete Employee:</strong></h3>
 
 <ul>
-	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/delete-employee/133" target="_new">http://localhost:8081/eas/api/v1/admin/delete-employee/133</a></li>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/delete-employee/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/admin/delete-employee/133</a></li>
 	<li><strong>Method:</strong> DELETE</li>
 	<li><strong>Headers:</strong><br />
 	<strong>Key:</strong> Authorization<br />
@@ -89,7 +89,7 @@ The &quot;Employee Assessment REST Service&quot; project offers a robust solutio
 <h3><strong>Get Employee By ID:</strong></h3>
 
 <ul>
-	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/employees/133" target="_new">http://localhost:8081/eas/api/v1/employee/133</a></li>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/employees/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/employee/133</a></li>
 	<li><strong>Method:</strong> GET</li>
 	<li><strong>Headers:</strong><br />
 	<strong>Key:</strong> Authorization<br />
@@ -104,4 +104,22 @@ The &quot;Employee Assessment REST Service&quot; project offers a robust solutio
 	<li><strong>Headers:<br />
 	Key:</strong> Authorization<br />
 	<strong>Value:</strong>&nbsp;<span style="font-size:11px">EzNzgwMTQ2fQ JhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxMjk4NjA5NSwiaWF0IjoxNzEyODk5Njk1fQ.Y4vI6mKFbuNOTIWgmWIesqBdDRt2439RO2yZxqfCqpk</span>&nbsp;</li>
+</ul>
+
+
+<h3><strong>Update Employee:</strong></h3>
+
+<ul>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/update-employee/{employeeID}" target="_new">http://localhost:8081/eas/api/v1/admin/update-employee/133</a></li>
+	<li><strong>Method:</strong> PUT</li>
+	<li><strong>Request Body:</strong><br />
+	json<br />
+	{<br />
+	&nbsp; &quot;name&quot;: &quot;Update Name&quot;,<br />
+	&nbsp; &quot;email&quot;: &quot;update@gmail.com&quot;,<br />
+	&nbsp; &quot;department&quot;: &quot;update Department&quot;<br />
+	}</li>
+	<li><strong>Headers:<br />
+	Key:</strong> Authorization<br />
+	<strong>Value:</strong>&nbsp;<span style="font-size:11px">EzNzgwMTQ2fQ JhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxMjk4NjA5NSwiaWF0IjoxNzEyODk5Njk1fQ.Y4vI6mKFbuNOTIWgmWIesqBdDRt2439RO2yZxqfCqpk</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
 </ul>
