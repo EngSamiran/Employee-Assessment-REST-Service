@@ -35,3 +35,73 @@ Rate limiting prevents excessive API requests, while circuit breaking helps main
 
 <p><strong>Conclusion:</strong><br />
 The &quot;Employee Assessment REST Service&quot; project offers a robust solution for managing employee information securely and efficiently through a RESTful API. With features such as role-based authentication, JWT validation, and resilience mechanisms, the project ensures data integrity, confidentiality, and system stability.</p>
+
+
+<h2 style="text-align:center"><strong><u>API Endpoints</u></strong></h2>
+
+<h3><strong>Authentication:</strong></h3>
+
+<ul>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/authentication" target="_new">http://localhost:8081/eas/api/v1/authentication</a></li>
+	<li><strong>Method:</strong> POST</li>
+	<li><strong>Request Body (Admin Role):</strong><br />
+	json -<br />
+	{<br />
+	&nbsp; &quot;userName&quot;: &quot;user1&quot;,<br />
+	&nbsp; &quot;password&quot;: &quot;1234&quot;<br />
+	}</li>
+	<li><strong>Request Body (User Role):</strong><br />
+	json<br />
+	{<br />
+	&nbsp; &quot;userName&quot;: &quot;user2&quot;,<br />
+	&nbsp; &quot;password&quot;: &quot;1234&quot;<br />
+	}<br />
+	&nbsp;</li>
+</ul>
+
+<h3><strong>Add Employee:</strong></h3>
+
+<ul>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/add-employee" target="_new">http://localhost:8081/eas/api/v1/admin/add-employee</a></li>
+	<li><strong>Method:</strong> POST</li>
+	<li><strong>Request Body:</strong><br />
+	json<br />
+	{<br />
+	&nbsp; &quot;name&quot;: &quot;Demo Name&quot;,<br />
+	&nbsp; &quot;email&quot;: &quot;demo@gmail.com&quot;,<br />
+	&nbsp; &quot;department&quot;: &quot;Demo Department&quot;<br />
+	}</li>
+	<li><strong>Headers:<br />
+	Key:</strong> Authorization<br />
+	<strong>Value:</strong>&nbsp;<span style="font-size:11px">EzNzgwMTQ2fQ JhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxMjk4NjA5NSwiaWF0IjoxNzEyODk5Njk1fQ.Y4vI6mKFbuNOTIWgmWIesqBdDRt2439RO2yZxqfCqpk</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+</ul>
+
+<h3><strong>Delete Employee:</strong></h3>
+
+<ul>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/admin/delete-employee/133" target="_new">http://localhost:8081/eas/api/v1/admin/delete-employee/133</a></li>
+	<li><strong>Method:</strong> DELETE</li>
+	<li><strong>Headers:</strong><br />
+	<strong>Key:</strong> Authorization<br />
+	<strong>Value:</strong>&nbsp;<span style="font-size:11px">EzNzgwMTQ2fQ JhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxMjk4NjA5NSwiaWF0IjoxNzEyODk5Njk1fQ.Y4vI6mKFbuNOTIWgmWIesqBdDRt2439RO2yZxqfCqpk</span>&nbsp;</li>
+</ul>
+
+<h3><strong>Get Employee By ID:</strong></h3>
+
+<ul>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/employees/133" target="_new">http://localhost:8081/eas/api/v1/employee/133</a></li>
+	<li><strong>Method:</strong> GET</li>
+	<li><strong>Headers:</strong><br />
+	<strong>Key:</strong> Authorization<br />
+	<strong>Value:</strong>&nbsp;<span style="font-size:11px">EzNzgwMTQ2fQ JhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxMjk4NjA5NSwiaWF0IjoxNzEyODk5Njk1fQ.Y4vI6mKFbuNOTIWgmWIesqBdDRt2439RO2yZxqfCqpk</span>&nbsp;</li>
+</ul>
+
+<h3><strong>Get All Employees:</strong></h3>
+
+<ul>
+	<li><strong>URL:</strong> <a href="http://localhost:8081/eas/api/v1/employees" target="_new">http://localhost:8081/eas/api/v1/employees</a></li>
+	<li><strong>Method:</strong> GET</li>
+	<li><strong>Headers:<br />
+	Key:</strong> Authorization<br />
+	<strong>Value:</strong>&nbsp;<span style="font-size:11px">EzNzgwMTQ2fQ JhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTcxMjk4NjA5NSwiaWF0IjoxNzEyODk5Njk1fQ.Y4vI6mKFbuNOTIWgmWIesqBdDRt2439RO2yZxqfCqpk</span>&nbsp;</li>
+</ul>
